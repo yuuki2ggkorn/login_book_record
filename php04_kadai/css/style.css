@@ -1,0 +1,88 @@
+
+
+.book-container {
+    display: flex;
+    padding: 0.5rem; /* 8px if 1rem = 16px */
+    border: 1px solid #D1D5DB; /* Tailwindのborder-gray-300に相当 */
+    margin-bottom: 0.5rem; /* 8px if 1rem = 16px */
+  }
+  
+  .book-container:hover {
+    background-color: #eeeeee; /* 灰色 */
+  }
+
+
+  .book-thumbnail {
+    margin-right: 1.25rem; /* 20px if 1rem = 16px */
+    width: 25%;
+  }
+  
+  .book-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .book-title {
+    font-size: 1.5rem; /* 18px if 1rem = 16px */
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 0.75rem; /* 12px if 1rem = 16px */
+    display: block;
+  }
+  
+  .book-author, .book-publisher, .book-description {
+    margin: 0.25rem; /* 4px if 1rem = 16px */
+    font-size: 1.125rem; /* 18px if 1rem = 16px */
+  }
+  
+  #submit {
+    background-color: #808080; /* 灰色 */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: not-allowed;
+  }
+  
+  #submit.enabled {
+    background-color: #007bff; /* 青色 */
+    cursor: pointer;
+  }
+
+  /* ポップアップのスタイル */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #close-popup {
+    margin-top: 20px;
+  }
+  
+  .jumbotron, .popup-content {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .navbar-barand:hover{
+    color: #808080; /* 灰色 */
+  }
